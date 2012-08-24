@@ -1,4 +1,7 @@
 H::Application.routes.draw do
+  get "portals/index"
+
+  root :to => 'portals#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

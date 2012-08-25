@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'thin'
 gem 'pg'
+gem 'modernizr-rails'
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -24,6 +25,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 group :assets do

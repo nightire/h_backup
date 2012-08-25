@@ -1,7 +1,7 @@
 H::Application.routes.draw do
   root to: 'portals#index'
 
-  # match '/singup', to: 'users#new'
+  match '/signup', to: 'users#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -11,6 +11,10 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.11.0'
+  # fb-fsevent is dependency for the guard gem
+  gem 'rb-fsevent'
+  gem 'guard-rspec'
+  gem 'guard-spork'
 end
 
 group :development do

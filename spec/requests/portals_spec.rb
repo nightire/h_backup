@@ -6,7 +6,8 @@ describe 'Portals' do
 
   describe 'Home Page' do
     before { visit root_path }
-    it { should have_selector 'title', text: 'Happiness' }
-    it { should have_selector 'a.logo', text: 'Happiness' }
+    it { should have_selector 'title',    text: 'Happiness' }
+    it { should have_selector 'a.logo',   text: 'Happiness' }
+    it { should have_selector 'a.button', text: 'Sign up now!'}
   end
 end

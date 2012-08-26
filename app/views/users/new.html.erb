@@ -1,8 +1,31 @@
 <% provide :page_title, 'Sign up' %>
 
 <div class="row">
-  <div>
-    <h1>Sign up</h1>
-    <h6 class="subheader">Register a new account to grow up with your family!<h6>
+  <h1>Sign up</h1>
+  <h6 class="subheader">
+    Register a new account to grow up with your family!
+  </h6>
+</div>
+
+<div class="row">
+  <div class="four columns centered">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :username, 'Account Name' %>
+      <%= f.text_field :username %>
+
+      <%= f.label :useremail, 'E-mail' %>
+      <%= f.text_field :useremail %>
+
+      <%= f.label :password, 'Password' %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, 'Confirmation' %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit 'Create my account',
+                   class: 'medium radius primary button' %>
+    <% end %>
   </div>
 </div>

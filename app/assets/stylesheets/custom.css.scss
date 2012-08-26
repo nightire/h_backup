@@ -6,3 +6,15 @@
   background-color: #eaeaea;
   border: 1px solid #cdcdcd;
 }
+
+/* Registration Form */
+.new_user {
+  input[type=submit] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .field_with_error input {
+    @extend .error;
+  }
+}

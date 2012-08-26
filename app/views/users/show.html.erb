@@ -1,0 +1,10 @@
+<% provide :page_title, @user.username %>
+<div class="row">
+  <h1>
+    <%= gravatar_for @user %>
+    <%= @user.username %>
+  </h1>
+  <h4 class="subheader">
+    <%= @user.useremail %>
+  </h4>
+</div>

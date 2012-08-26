@@ -1,4 +1,6 @@
 H::Application.routes.draw do
+  resources :users
+
   root to: 'portals#index'
 
   match '/signup', to: 'users#new'

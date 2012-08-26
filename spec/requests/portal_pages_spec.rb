@@ -1,7 +1,7 @@
 require 'spec_helper'
 include ApplicationHelper
 
-describe 'Portals' do
+describe 'Portal Pages' do
   subject { page }
 
   describe 'Home Page' do
